@@ -1,19 +1,10 @@
-import React, { useRef, useMemo, useEffect } from 'react';
+import React, { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Points } from '@react-three/drei';
 import * as THREE from 'three';
-import { useAudioStore } from '../stores/audioStore';
 
 const NovaOrb = ({ isListening, isSpeaking }) => {
   const pointsRef = useRef();
-  const { audioData, updateAudioData } = useAudioStore();
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      updateAudioData();
-    }, 50);
-    return () => clearInterval(interval);
-  }, [updateAudioData]);
 
   const [geometry, originalPositions, originalColors] = useMemo(() => {
     const geom = new THREE.IcosahedronGeometry(1.5, 64);
@@ -31,7 +22,7 @@ const NovaOrb = ({ isListening, isSpeaking }) => {
   }, []);
 
   useFrame((state, delta) => {
-    if (pointsRef.current && audioData) {
+    if (pointsRef.current) {
       pointsRef.current.rotation.y += delta * 0.1;
       const positions = pointsRef.current.geometry.attributes.position.array;
       const colors = pointsRef.current.geometry.attributes.color.array;
@@ -43,9 +34,9 @@ const NovaOrb = ({ isListening, isSpeaking }) => {
           originalPositions[i + 1],
           originalPositions[i + 2]
         );
-        const freqIndex = i % audioData.length;
-        const amp = audioData[freqIndex] / 255;
-
+        
+        // Create a simple animation without audio data
+        const amp = 0.3 + 0.2 * Math.sin(time + i * 0.1);
         const displacement = amp * 0.5 * Math.sin(p.y * 5 + time);
         p.add(p.clone().normalize().multiplyScalar(displacement));
 
