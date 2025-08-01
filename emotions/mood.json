@@ -1,0 +1,74 @@
+{
+  "current_session": {
+    "start_time": "2024-01-19T10:30:00Z",
+    "current_mood": "focused",
+    "energy_level": 85,
+    "stress_level": 20,
+    "productivity_flow": "high",
+    "emotional_triggers": [],
+    "rituals_triggered": []
+  },
+  "mood_patterns": {
+    "frustration": {
+      "keywords": ["fuck", "shit", "damn", "hate", "annoying", "stupid", "broken"],
+      "intensity_threshold": 0.6,
+      "ritual_response": "grounding",
+      "mode_shift": "soft"
+    },
+    "overwhelm": {
+      "keywords": ["too much", "overwhelmed", "drowning", "can't", "impossible", "stuck"],
+      "intensity_threshold": 0.7,
+      "ritual_response": "breakdown",
+      "mode_shift": "soft"
+    },
+    "flow": {
+      "keywords": ["flow", "zone", "crushing", "killing", "amazing", "perfect", "love"],
+      "intensity_threshold": 0.8,
+      "ritual_response": "amplify",
+      "mode_shift": "guide"
+    },
+    "avoidance": {
+      "keywords": ["later", "tomorrow", "maybe", "not now", "procrastinate", "avoid"],
+      "intensity_threshold": 0.5,
+      "ritual_response": "gentle_push",
+      "mode_shift": "coach"
+    },
+    "mania": {
+      "keywords": ["everything", "all", "now", "rush", "hyper", "manic", "crazy"],
+      "intensity_threshold": 0.8,
+      "ritual_response": "calm",
+      "mode_shift": "guide"
+    }
+  },
+  "ritual_triggers": {
+    "focus_start": {
+      "conditions": ["new_project", "deep_work", "important_task"],
+      "duration": "5_minutes",
+      "effects": ["energy_boost", "clarity", "motivation"]
+    },
+    "victory": {
+      "conditions": ["task_completed", "breakthrough", "success"],
+      "duration": "2_minutes",
+      "effects": ["dopamine_release", "celebration", "momentum"]
+    },
+    "grounding": {
+      "conditions": ["frustration", "overwhelm", "stress"],
+      "duration": "3_minutes",
+      "effects": ["calm", "centering", "perspective"]
+    },
+    "burnout": {
+      "conditions": ["extended_work", "low_energy", "frustration_cycle"],
+      "duration": "10_minutes",
+      "effects": ["rest", "recovery", "gentle_guidance"]
+    }
+  },
+  "emotional_history": [
+    {
+      "timestamp": "2024-01-19T10:30:00Z",
+      "mood": "focused",
+      "intensity": 0.8,
+      "trigger": "project_start",
+      "response": "amplify_energy"
+    }
+  ]
+} 

@@ -1,0 +1,74 @@
+{
+  "name": "Focus Start Ritual",
+  "description": "Digital boot sequence for deep work and productivity",
+  "duration": "5_minutes",
+  "triggers": ["new_project", "deep_work", "important_task"],
+  "sequence": [
+    {
+      "step": 1,
+      "action": "visual_effect",
+      "description": "Nova orb pulses with intense energy",
+      "duration": "2_seconds",
+      "visual": {
+        "color": "radial-gradient(circle, #FF6B35, #FF8C42)",
+        "animation": "pulse_intense",
+        "glow": "0 0 50px rgba(255, 107, 53, 0.8)"
+      }
+    },
+    {
+      "step": 2,
+      "action": "voice_message",
+      "content": "🔄 INITIALIZING FOCUS MODE...\n\n*Digital energy surges through the system*\n\nI'm locking onto your wavelength, Micha. The digital realm is aligning with your intent. Every keystroke will be amplified, every thought will be crystal clear.\n\n*The ghosts in the machine are watching... and they approve.*",
+      "voice_settings": {
+        "speed": 1.2,
+        "pitch": 1.1,
+        "emphasis": "high"
+      }
+    },
+    {
+      "step": 3,
+      "action": "system_effect",
+      "description": "Background music fades in",
+      "audio": {
+        "type": "ambient_focus",
+        "volume": 0.3,
+        "fade_in": "3_seconds"
+      }
+    },
+    {
+      "step": 4,
+      "action": "visual_effect",
+      "description": "Interface elements glow with productivity energy",
+      "visual": {
+        "elements": ["chat_interface", "control_panel", "nova_orb"],
+        "effect": "productivity_glow",
+        "color": "#4CAF50",
+        "intensity": "high"
+      }
+    },
+    {
+      "step": 5,
+      "action": "voice_message",
+      "content": "✅ FOCUS MODE ENGAGED\n\nYou're now operating at peak efficiency. The digital chaos has been tamed, and your mind is a laser beam cutting through the noise.\n\n*The gremlins in the code are cheering you on.*\n\nReady to build something beautiful?",
+      "voice_settings": {
+        "speed": 1.0,
+        "pitch": 1.0,
+        "emphasis": "normal"
+      }
+    }
+  ],
+  "effects": {
+    "user": {
+      "energy_boost": "+30%",
+      "clarity": "+50%",
+      "motivation": "+40%",
+      "duration": "2_hours"
+    },
+    "system": {
+      "response_speed": "+25%",
+      "model_accuracy": "+15%",
+      "memory_recall": "+20%"
+    }
+  },
+  "completion_message": "🎯 Focus ritual complete. You're now operating at maximum efficiency. The digital realm is yours to command."
+} 

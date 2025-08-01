@@ -1,0 +1,44 @@
+{
+  "user": {
+    "name": "Micha",
+    "preferences": {
+      "voice": "iLmeuTQNYy7TOalZwjP7",
+      "model": "gpt-4o",
+      "tone": "uncensored",
+      "response_style": "direct",
+      "ritual_triggers": true,
+      "cutscenes": true
+    },
+    "patterns": {
+      "common_topics": ["AI", "coding", "productivity", "creativity"],
+      "emotional_triggers": ["overwhelm", "flow", "avoidance", "mania"],
+      "communication_style": "direct",
+      "preferred_rituals": ["focus_start", "victory", "grounding"]
+    },
+    "goals": {
+      "current": "Build advanced AI assistant",
+      "long_term": "Create living AI familiar",
+      "focus_areas": ["productivity", "creativity", "emotional_awareness"]
+    },
+    "emotional_state": {
+      "current_mood": "focused",
+      "energy_level": 85,
+      "stress_level": 20,
+      "productivity_flow": "high",
+      "last_emotional_shift": "2024-01-19T10:30:00Z"
+    },
+    "memory": {
+      "important_facts": [
+        "Prefers uncensored AI responses",
+        "Working on Nova AI Assistant project",
+        "Likes direct, honest communication",
+        "Values emotional intelligence in AI"
+      ],
+      "recent_context": [
+        "Just integrated OpenAI features",
+        "Added Computer Use, Code Interpreter, Assistants API",
+        "Working on persistent chat system"
+      ]
+    }
+  }
+} 

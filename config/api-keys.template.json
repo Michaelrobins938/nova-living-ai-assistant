@@ -1,0 +1,9 @@
+{
+  "openai": {
+    "apiKey": "your-openai-api-key-here"
+  },
+  "elevenlabs": {
+    "apiKey": "your-elevenlabs-api-key-here"
+  },
+  "voiceId": "iLmeuTQNYy7TOalZwjP7"
+} 
